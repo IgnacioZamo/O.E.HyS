@@ -1,4 +1,6 @@
 ---
+import Header from "../components/header/Header";
+import Hero from "../components/header/Hero";
 
 ---
 
@@ -8,9 +10,12 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title></title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="">
+			<Header client:load/>
+
+		</div>
 	</body>
 </html>
