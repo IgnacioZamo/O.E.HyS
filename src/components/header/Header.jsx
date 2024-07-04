@@ -9,23 +9,26 @@ const Header = () => {
             <div className='flex pl-16'>
                 <div className='flex gap-5 justify-center items-center hover:cursor-pointer'>
                     <div className=' flex justify-center'>
-                        <img className='h-12' src="https://images.vexels.com/media/users/3/129876/isolated/preview/1043ea6260755f02bafd6d2fa98072ec-icono-de-casco-de-construccion.png" alt="logo"/>
+                        <img className='h-12 text-white' src="https://images.vexels.com/media/users/3/129876/isolated/preview/1043ea6260755f02bafd6d2fa98072ec-icono-de-casco-de-construccion.png" alt="logo"/>
                     </div>
                     <p className='flex flex-col text-start'><span className='text-2xl text-cyan-600'>Ever Ojeda</span>
-                    <span className='text-slate-800'>Higiene y seguridad</span></p>
+                    <span className='text-slate-100'>Higiene y seguridad</span></p>
                 </div>
             </div>
             <div className=''>
                 <ul className='flex justify-around items-center mx-auto h-full'>
                     {itemsNavbar.map((menus,key)=>(
-                        <li key={key} className='font-semibold hover:text-cyan-700 hover:cursor-pointer'>
+                        <li key={key} className='font-semibold text-white hover:text-cyan-700 hover:cursor-pointer'>
                             {menus}
                         </li>
                     ))}
                 </ul>                
             </div>
         </div>
-        <img className='absolute top-0 w-full' src="https://sisanjuan.b-cdn.net/media/k2/items/cache/b2f92311964e73fcd65f099c54fa935f_XL.jpg?t=20230614_133918" alt="" />
+        <div className='absolute top-0 w-full h-screen overflow-hidden'>
+                <div className='absolute top-0 w-full h-full bg-gradient-to-b from-slate-900 to-gray-600/30'></div>
+                <img className='w-full h-full object-cover' src="https://chaer.com.ar/wp-content/uploads/2019/07/LEY.jpg" alt="background" />
+            </div>
     </div>
   )
 }
