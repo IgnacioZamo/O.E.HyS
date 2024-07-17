@@ -3,8 +3,8 @@ import React from 'react'
 const Header = () => {
     const itemsNavbar = ["Home", "Servicio", "Vision", "Contacto"];
   return (
-    <div className='relative'>
-        <div className='p-10 w-full grid grid-cols-2 relative z-20'>
+    <div className='relative top-0 left-0 w-full z-30'>
+        <div className='absolute top-0 left-0 w-full p-10 grid grid-cols-2 z-30'>
             {/* logo */}
             <div className='flex pl-16'>
                 <div className='flex gap-5 justify-center items-center hover:cursor-pointer'>
