@@ -7,24 +7,35 @@ const img = [{img:"https://www.primeraedicion.com.ar/wp-content/uploads/2021/04/
              {img:"https://cdn.euroinnova.edu.es/img/subidasEditor/2%20(9)-1662476376.webp"},
              {img:"https://www.isecursos.com/multimedia/estudios/img_73655_eddishigiene.jpg"}
 ]
+
+const empresas = ["https://w7.pngwing.com/pngs/140/543/png-transparent-logo-company-business-business-blue-angle-company.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRmEmedAcu3KO5lPitxNEu4A_B4rpjIjv-flypfGBZVdGY0Rune9K21XZVwgbseSuuGo&usqp=CAU","https://e7.pngegg.com/pngimages/984/1000/png-clipart-production-logo-building-real-estate-design-company-logo.png"]
 ---
 <div class="py-10 px-5 w-full bg-slate-100">
-    <div class="mx-auto p-5">
-        <h2 class="text-center text-2xl font-bold mb-5">Un poco de mi trabajo</h2>
-        <div class="swiper-container w-full mx-auto overflow-hidden">
+    <div class="mx-auto p-5 mb-10">
+        <h2 class="text-center text-2xl lg:text-4xl font-bold mb-5 lg:mb-10">Mi trabajo</h2>
+        <div class="swiper-container w-full lg:w-3/5 mx-auto overflow-hidden">
             <div class="swiper-wrapper">
                 {img.map((img,ind)=>(
                     <div class={`swiper-slide slide-${ind} w-4/5 mx-auto flex justify-center items-center`}>
                         <img class="h-56 mx-auto" src={`${img.img}`} alt={`Imagen ${ind}`}>
                     </div>
                 ))}
-
             </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2 class="text-2xl font-bold">Empresas</h2>
+            <p class="text-xl pl-3 text-cyan-700 font-semibold">Que confian en mi trabajo</p>
+        </div>
+        <div class="swiper-container2 w-full px-5 mx-auto overflow-hidden">
+            {empresas.map((img,ind)=>(
+                <div class="">
+                        {/* SEGUIR ACÁ */}
+                </div>
+            ))}
 
         </div>
-
-
-
     </div>
 </div>
 

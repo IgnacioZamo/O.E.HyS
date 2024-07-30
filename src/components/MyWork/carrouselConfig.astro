@@ -27,4 +27,29 @@
 
     centeredSlides: true, // Centra el slider activo
 });
+
+new Swiper (".swiper-container2", {
+    direction: "horizontal",
+    loop: true,
+
+    autoplay: {
+        delay: 4000,
+    },
+    // Cambia el efecto de transición a "cube" o "coverflow"
+    // effect: 'fade',
+    slidesPerView: 1, // Muestra solo una diapositiva a la vez
+    breakpoints: { // Configuraciones específicas para diferentes tamaños de pantalla
+      640: { // A partir de 640px
+        slidesPerView: 1, // Una diapositiva
+      },
+      768: { // A partir de 768px
+        slidesPerView: 2, // Dos diapositivas
+      },
+      1024: { // A partir de 1024px
+        slidesPerView: 3, // Tres diapositivas
+      }
+    },
+
+    centeredSlides: true, // Centra el slider activo
+});
 </script>
