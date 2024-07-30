@@ -1,0 +1,33 @@
+---
+import CarrouselConfig from "./carrouselConfig.astro"
+const img = [{img:"https://www.primeraedicion.com.ar/wp-content/uploads/2021/04/Medidas-de-seguridad-e-higiene.jpg"},
+             {img:"https://factorialhr.co/wp-content/uploads/2023/03/16110837/seguridad-industrial.jpg"},
+             {img:"https://ashconsultores.com.ar/wp-content/uploads/2022/04/Seguridad-e-higiene-industrial.jpg"},
+             {img:"https://www.unsta.edu.ar/ingenieria/wp-content/uploads/sites/8/2019/10/tecnicatura_higiene_Seguridad_laboral_UNSTA.jpg"},
+             {img:"https://cdn.euroinnova.edu.es/img/subidasEditor/2%20(9)-1662476376.webp"},
+             {img:"https://www.isecursos.com/multimedia/estudios/img_73655_eddishigiene.jpg"}
+]
+---
+<div class="py-10 px-5 w-full bg-slate-100">
+    <div class="mx-auto p-5">
+        <h2 class="text-center text-2xl font-bold mb-5">Un poco de mi trabajo</h2>
+        <div class="swiper-container w-full mx-auto overflow-hidden">
+            <div class="swiper-wrapper">
+                {img.map((img,ind)=>(
+                    <div class={`swiper-slide slide-${ind} w-4/5 mx-auto flex justify-center items-center`}>
+                        <img class="h-56 mx-auto" src={`${img.img}`} alt={`Imagen ${ind}`}>
+                    </div>
+                ))}
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+<CarrouselConfig/>
